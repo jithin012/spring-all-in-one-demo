@@ -1,0 +1,93 @@
+[
+	{
+		"id": 1,
+		"name": "HP LaserJet Pro MFP M126nw",
+		"price": 19499,
+		"model": "CZ175A",
+		"printerColorType": "BlackAndWhite",
+		"printerFunctionType": "PrintScanCopy",
+		"productType": "Laser",
+		"usageType": "Home"
+	},
+	
+	{
+		"id": 2,
+		"name": "HP Laser 108a",
+		"price": 10099,
+		"model": "4ZB79A",
+		"printerColorType": "BlackAndWhite",
+		"printerFunctionType": "PrintOnly",
+		"productType": "Laser",
+		"usageType": "Business"
+	},
+	{
+		"id": 3,
+		"name": "HP DesignJet T650 36-inch Large Format Plotter Printer (up to A0 size) with Mobile Printing + Ink Bundle",
+		"price": 159169,
+		"model": "5HB10A",
+		"printerColorType": "Color",
+		"printerFunctionType": "PrintOnly",
+		"productType": "OfficePrinter",
+		"usageType": "Enterprise"
+	},
+	{
+		"id": 4,
+		"name": "HP LaserJet Pro M1136 Multifunction Printer",
+		"price": 16999,
+		"model": "CE849A",
+		"printerColorType": "BlackAndWhite",
+		"printerFunctionType": "PrintScanCopy",
+		"productType": "Laser",
+		"usageType": "Home"
+	},
+	{
+		"id": 5,
+		"name": "HP Ink Tank 310",
+		"price": 11549,
+		"model": "Z6Z11A",
+		"printerColorType": "Color",
+		"printerFunctionType": "PrintScanCopy",
+		"productType": "Inkjet",
+		"usageType": "Home"
+	},
+	{
+		"id": 6,
+		"name": "HP LaserJet Pro MFP M226dw",
+		"price": 32599,
+		"model": "C6N23A",
+		"printerColorType": "BlackAndWhite",
+		"printerFunctionType": "PrintScanCopyFax",
+		"productType": "Laser",
+		"usageType": "Business"
+	},
+	{
+		"id": 7,
+		"name": "HP Smart Tank 516 Wireless All-in-One",
+		"price": 16232,
+		"model": "3YW70A",
+		"printerColorType": "Color",
+		"printerFunctionType": "PrintScanCopyWireless",
+		"productType": "Inkjet",
+		"usageType": "Home"
+	},
+	{
+		"id": 8,
+		"name": "Samsung ProXpress SL-C4060FX Color Laser Multifunction Printer",
+		"price": 102799,
+		"model": "SS218H",
+		"printerColorType": "Color",
+		"printerFunctionType": "PrintScanCopyFax",
+		"productType": "ColorMultifunctional",
+		"usageType": "Business"
+	},
+	{
+		"id": 9,
+		"name": "HP Ink Tank Wireless 415",
+		"price": 14410,
+		"model": "Z4B53A",
+		"printerColorType": "BlackAndWhite",
+		"printerFunctionType": "PrintScanCopy",
+		"productType": "Multifunctional",
+		"usageType": "Home"
+	}
+]
