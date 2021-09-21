@@ -6,7 +6,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-import com.demo.spring.constants.UsageType;
 import com.demo.spring.model.Product;
 import com.demo.spring.repository.ProductRepository;
 
@@ -21,10 +20,9 @@ public class DBTestQueries implements CommandLineRunner {
 
 	public void run(String... args) throws Exception {
 		long count = this.productRepository.count();
-//		System.out.println("Total Number of items " + count);
+		System.out.println("Total Number of items " + count);
 //		List<Product> products = this.productRepository.findByOrderByPriceAsc();
 //		showProducts(products);
-
 
 //		List<Product> higherPricePrinter = this.productRepository.findByPriceGreaterThan(100000);
 //		showProducts(higherPricePrinter);
@@ -86,9 +84,10 @@ public class DBTestQueries implements CommandLineRunner {
 //				UsageType.Home);
 //		showProducts(affordableHomeTypePrinter);
 
-		List<Product> commercialPrinters = this.productRepository.findByUsageTypeOrUsageType(UsageType.Business,
-				UsageType.Enterprise);
-		showProducts(commercialPrinters);
+//		List<Product> commercialPrinters = this.productRepository.findByUsageTypeOrUsageType(UsageType.Business,
+//				UsageType.Enterprise);
+//		showProducts(commercialPrinters);
+
 	}
 
 	private void showProducts(List<Product> products) {
