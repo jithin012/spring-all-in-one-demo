@@ -7,7 +7,10 @@ import org.springframework.context.ApplicationContext;
 @SpringBootApplication
 public class ProductDemo {
 	public static void main(String[] args) {
-		ApplicationContext appContext = SpringApplication.run(ProductDemo.class, args);
+		SpringApplication app = new SpringApplication(ProductDemo.class);
+		// app.setWebApplicationType(WebApplicationType.REACTIVE);
+
+		ApplicationContext appContext = app.run(args);
 
 //		String[] beans = appContext.getBeanDefinitionNames();
 //		Arrays.sort(beans);

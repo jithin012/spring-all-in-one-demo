@@ -8,9 +8,13 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
-	@ExceptionHandler(value = ProductNotFoundException.class)
-	public ResponseEntity productNotFoundException(ProductNotFoundException productNotFoundException) {
-		return new ResponseEntity(productNotFoundException.getMessage(), HttpStatus.NOT_FOUND);
+	@ExceptionHandler(value = { ProductNotFoundException.class, UserNotFoundException.class })
+	public ResponseEntity itemNotFoundException(RuntimeException ex) {
+		return new ResponseEntity(ex.getMessage(), HttpStatus.NOT_FOUND);
 	}
 
+	@ExceptionHandler(value = { DataExistException.class, EmptyInputException.class })
+	public ResponseEntity badRequest(RuntimeException ex) {
+		return new ResponseEntity(ex.getMessage(), HttpStatus.BAD_REQUEST);
+	}
 }

@@ -30,9 +30,7 @@ public class ProductController {
 			@RequestParam(defaultValue = "5") int size, @RequestParam(defaultValue = "price") String[] sortBy) {
 
 		Pageable paging = PageRequest.of(page, size, Sort.by(sortBy));
-
 		Page<Product> pageProduct = productService.findDefaultPaginatedProduct(paging);
-
 		return new ResponseEntity<Page<Product>>(pageProduct, HttpStatus.OK);
 	}
 
