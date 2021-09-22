@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
 @ControllerAdvice
-public class GlobalExceptionHandler {
+public class GlobalExceptionHandler /* extends ResponseEntityExceptionHandler */ {
 
 	@ExceptionHandler(value = { ProductNotFoundException.class, UserNotFoundException.class })
 	public ResponseEntity itemNotFoundException(RuntimeException ex) {

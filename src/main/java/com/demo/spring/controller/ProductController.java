@@ -57,5 +57,9 @@ public class ProductController {
 		return ResponseEntity.ok().header("Custom-Header", "foo").body(product);
 	}
 
+//	protected ResponseEntity<Object> handleHttpRequestMethodNotSupported(HttpRequestMethodNotSupportedException ex) {
+//		return new ResponseEntity<Object>("Please Change http method type request", HttpStatus.NOT_FOUND);
+//	}
+
 }
 
