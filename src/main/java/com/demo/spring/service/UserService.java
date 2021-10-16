@@ -20,22 +20,23 @@ import com.demo.spring.repository.UserRepository;
 public class UserService {
 	public static final String githubBaseUrl = "https://api.github.com/users/";
 	public static final String indianPostalBaseUrl = "";
-	RestTemplate restTemplate;
+
 
 	@Autowired
 	UserRepository userRepository;
 
-	public UserService() {
-		this.restTemplate = new RestTemplate();
-	}
+	@Autowired
+	SignalClient signalClient;
 
 	public GithubUser searchUserByGithubUserName(String userName) {
 
 		HttpHeaders headers = new HttpHeaders();
 		headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
+		// add authz token here.
 		HttpEntity<Object> entity = new HttpEntity<Object>(headers);
 
 		try {
+			RestTemplate restTemplate = signalClient.getRestTemplate();
 			ResponseEntity<GithubUser> response = restTemplate.exchange(githubBaseUrl + userName, HttpMethod.GET,
 					entity, GithubUser.class);
 			return response.getBody();
